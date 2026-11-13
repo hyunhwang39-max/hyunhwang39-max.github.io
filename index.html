@@ -31,6 +31,7 @@ tfoot{font-weight:600}
 .case-plan span{display:block;margin-top:3px}
 @media(max-width:700px){.case-overview>div{grid-template-columns:1fr;gap:3px}}
 @media print{.project-case{break-inside:auto}.table-scroll{overflow:visible}table{font-size:9px}th,td{padding:6px 4px}}
+.project-visual{margin:24px 0;border:1px solid var(--line);background:#fcfbf8}.project-visual img{display:block;width:100%;height:auto}.project-visual figcaption{padding:14px 18px 0;font-size:12px;line-height:1.8;color:var(--muted);border-top:1px solid var(--line)}.project-visual figcaption strong{color:var(--text);font-weight:600}.visual-links{display:flex;flex-wrap:wrap;gap:10px 20px;padding:12px 18px 18px;font-size:11px}@media print{.visual-links{display:none}.project-visual{break-inside:avoid}}
 </style></head><body><main class="resume">
 <header><div class="topline" aria-hidden="true"></div><span class="overline">RESUME & PORTFOLIO</span><h1>김황현</h1><p class="intro">관심 있는 문제를 분석한 프로젝트와 학업·활동 경험을 정리합니다.</p></header>
 <section aria-labelledby="projects">
@@ -45,6 +46,13 @@ tfoot{font-weight:600}
 <div><dt>접근</dt><dd>순매출·예산원가·실제원가를 비교하고, 수익성이 가장 낮은 마켓의 포장 원가 절감 가능성을 검토합니다.</dd></div>
 <div><dt>예시 결론</dt><dd>동남아 마켓 포장 원가를 3백만원 줄이면, 전체 매출총이익률은 <strong>38.0% → 38.3%</strong>로 개선됩니다. 매출과 나머지 원가가 동일하다는 가정의 계산 결과입니다.</dd></div>
 </dl>
+<figure class="project-visual">
+<a href="assets/margin-analysis.svg" target="_blank" rel="noopener" aria-label="분석 차트 크게 보기 (새 탭)">
+<img src="assets/margin-analysis.svg" width="1000" height="920" alt="가상 데이터 분석. 한국 이익률 45%, 일본 35%, 동남아 25%, 전체 38%. 포장 원가 3백만원 절감 시 총이익 380에서 383백만원, 이익률 38.3%." loading="lazy">
+</a>
+<figcaption><strong>마켓 비교에서 개선 시나리오까지</strong><br>동남아의 낮은 이익률을 확인하고, 포장 원가 절감이 전체 이익에 미치는 영향을 연결했습니다. Python · Matplotlib로 제작한 가상 데이터 시각화입니다.</figcaption>
+<div class="visual-links"><a href="assets/margin-analysis.svg" target="_blank" rel="noopener">차트 크게 보기 ↗</a><a href="scripts/plot_margins.py" download>파이썬 코드 다운로드 ↓</a></div>
+</figure>
 <details class="case-details"><summary>분석 과정과 실행 계획 보기</summary>
 <div class="case-body">
 <h4>1. 마감 자료 정리 및 차이 분석</h4>
