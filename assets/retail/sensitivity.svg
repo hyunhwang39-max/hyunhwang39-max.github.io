@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="345.6pt" viewBox="0 0 792 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6 
+L 792 345.6 
+L 792 0 
+L 0 0 
+z
+" style="fill: #faf9f5"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 110.88 283.392 
+L 752.4 283.392 
+L 752.4 93.312 
+L 110.88 93.312 
+z
+" style="fill: #faf9f5"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 110.88 283.392 
+L 110.88 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="110.88" y="301.749422" transform="rotate(-0 110.88 301.749422)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 196.416 283.392 
+L 196.416 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="196.416" y="301.749422" transform="rotate(-0 196.416 301.749422)">1%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 281.952 283.392 
+L 281.952 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="281.952" y="301.749422" transform="rotate(-0 281.952 301.749422)">2%</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 367.488 283.392 
+L 367.488 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="367.488" y="301.749422" transform="rotate(-0 367.488 301.749422)">3%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 453.024 283.392 
+L 453.024 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="453.024" y="301.749422" transform="rotate(-0 453.024 301.749422)">4%</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 538.56 283.392 
+L 538.56 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="538.56" y="301.749422" transform="rotate(-0 538.56 301.749422)">5%</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 624.096 283.392 
+L 624.096 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="624.096" y="301.749422" transform="rotate(-0 624.096 301.749422)">6%</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 709.632 283.392 
+L 709.632 93.312 
+" clip-path="url(#pbd1b806651)" style="fill: none; stroke: #e3e3dc; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #656963" x="709.632" y="301.749422" transform="rotate(-0 709.632 301.749422)">7%</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_17"/>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #656963" x="100.88" y="138.531141" transform="rotate(-0 100.88 138.531141)">All markets</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_18"/>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #656963" x="100.88" y="246.530711" transform="rotate(-0 100.88 246.530711)">France</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 110.88 101.952 
+L 355.3869 101.952 
+L 355.3869 132.192 
+L 110.88 132.192 
+z
+" clip-path="url(#pbd1b806651)" style="fill: #252a2a"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 110.88 209.952 
+L 602.467701 209.952 
+L 602.467701 240.192 
+L 110.88 240.192 
+z
+" clip-path="url(#pbd1b806651)" style="fill: #252a2a"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 110.88 136.512 
+L 354.671437 136.512 
+L 354.671437 166.752 
+L 110.88 166.752 
+z
+" clip-path="url(#pbd1b806651)" style="fill: #a38a58"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 110.88 244.512 
+L 602.704592 244.512 
+L 602.704592 274.752 
+L 110.88 274.752 
+z
+" clip-path="url(#pbd1b806651)" style="fill: #a38a58"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="363.9405" y="119.669656" transform="rotate(-0 363.9405 119.669656)">2.859%</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="363.225037" y="154.229656" transform="rotate(-0 363.225037 154.229656)">2.850%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="611.021301" y="227.669656" transform="rotate(-0 611.021301 227.669656)">5.747%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="611.258192" y="262.229656" transform="rotate(-0 611.258192 262.229656)">5.750%</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_7">
+     <path d="M 118.98 79.248291 
+L 136.98 79.248291 
+L 136.98 72.948291 
+L 118.98 72.948291 
+z
+" style="fill: #252a2a"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="144.18" y="79.248291" transform="rotate(-0 144.18 79.248291)">Baseline</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 200.338594 79.248291 
+L 218.338594 79.248291 
+L 218.338594 72.948291 
+L 200.338594 72.948291 
+z
+" style="fill: #a38a58"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="225.538594" y="79.248291" transform="rotate(-0 225.538594 79.248291)">Duplicate-collapse sensitivity</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_17">
+   <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #252a2a" x="43.56" y="24.192" transform="rotate(-0 43.56 24.192)">The pattern survives a duplicate-row sensitivity check.</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #656963" x="43.56" y="46.656" transform="rotate(-0 43.56 46.656)">Credit amount / recorded sales | baseline vs within-sheet exact duplicates collapsed</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #656963" x="43.56" y="330.048" transform="rotate(-0 43.56 330.048)">Within-sheet duplicates are ambiguous. Baseline preserves them; cross-sheet copies are removed in both views.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbd1b806651">
+   <rect x="110.88" y="93.312" width="641.52" height="190.08"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,6 @@
+.plot-deps/
+.mpl-cache/
+__pycache__/
+data/raw/
+.analysis-cache/
+.preview-*/

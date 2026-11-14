@@ -37,42 +37,21 @@ tfoot{font-weight:600}
 <section aria-labelledby="projects">
 <h2 id="projects">개인 프로젝트<span class="section-en">Projects</span></h2>
 <article class="entry project-case">
-<div class="case-label">예시 프로젝트 · 가상 데이터</div>
-<h3>스킨케어 제품의 마켓별 매출총이익률 개선 분석</h3>
-<p class="case-summary">마감 원가와 매출을 정리하고, 수익성이 낮은 마켓의 개선 과제 하나를 선정하는 분석 예시입니다.</p>
-<p class="sample-note">포트폴리오 구성용 샘플입니다. 실제 기업 자료, 수행 이력 또는 달성 성과가 아닙니다.</p>
+<div class="case-label">01 · 실제 공개 데이터 분석 · Python / pandas / Matplotlib</div>
+<h3>큰 취소 한 건이 국가의 평가를 바꾼다면</h3>
+<p class="case-summary">영국 온라인 소매업체의 실제 거래 기록을 정리하고, 국가별 취소 금액을 비교해 먼저 확인할 거래와 실행 과제를 찾았습니다.</p>
 <dl class="case-overview">
-<div><dt>문제</dt><dd>같은 제품을 판매해도 마켓별 매출총이익률이 달라지는 원인은 무엇일까?</dd></div>
-<div><dt>접근</dt><dd>순매출·예산원가·실제원가를 비교하고, 수익성이 가장 낮은 마켓의 포장 원가 절감 가능성을 검토합니다.</dd></div>
-<div><dt>예시 결론</dt><dd>동남아 마켓 포장 원가를 3백만원 줄이면, 전체 매출총이익률은 <strong>38.0% → 38.3%</strong>로 개선됩니다. 매출과 나머지 원가가 동일하다는 가정의 계산 결과입니다.</dd></div>
+<div><dt>데이터</dt><dd>UCI Online Retail II · 원본 약 107만 행<br>2009.12–2011.11의 완전한 24개월을 분석했습니다.</dd></div>
+<div><dt>핵심 발견</dt><dd>프랑스의 상품 취소 금액 중 <strong>67.8%가 한 건의 전표</strong>에 집중돼 있었습니다. 해당 전표에는 45개 상품이 함께 기록돼 있었습니다.</dd></div>
+<div><dt>결론</dt><dd>국가 전체나 상품 품질을 문제로 단정하기보다, <strong>대규모 주문의 취소 사유와 정산 내역을 먼저 확인</strong>하도록 조사 우선순위를 제안했습니다.</dd></div>
 </dl>
 <figure class="project-visual">
-<a href="assets/margin-analysis.svg" target="_blank" rel="noopener" aria-label="분석 차트 크게 보기 (새 탭)">
-<img src="assets/margin-analysis.svg" width="1000" height="920" alt="가상 데이터 분석. 한국 이익률 45%, 일본 35%, 동남아 25%, 전체 38%. 포장 원가 3백만원 절감 시 총이익 380에서 383백만원, 이익률 38.3%." loading="lazy">
-</a>
-<figcaption><strong>마켓 비교에서 개선 시나리오까지</strong><br>동남아의 낮은 이익률을 확인하고, 포장 원가 절감이 전체 이익에 미치는 영향을 연결했습니다. Python · Matplotlib로 제작한 가상 데이터 시각화입니다.</figcaption>
-<div class="visual-links"><a href="assets/margin-analysis.svg" target="_blank" rel="noopener">차트 크게 보기 ↗</a><a href="scripts/plot_margins.py" download>파이썬 코드 다운로드 ↓</a></div>
+<a href="projects/retail-analysis.html" aria-label="실제 거래 데이터 분석 프로젝트 자세히 읽기">
+<img src="assets/retail/france.svg" width="1100" height="440" alt="프랑스 상품 취소 금액 17,514.39파운드 중 하나의 전표가 11,880.84파운드로 67.8%를 차지합니다." loading="lazy"></a>
+<figcaption>Python으로 만든 실제 데이터 시각화입니다. 취소 기록만으로 반품 사유나 실제 손실을 알 수는 없어, 확인 가능한 결과와 추가 조사 과제를 구분했습니다.</figcaption>
+<div class="visual-links"><a href="projects/retail-analysis.html"><strong>데이터부터 분석 과정·결론까지 자세히 읽기 →</strong></a></div>
 </figure>
-<details class="case-details"><summary>분석 과정과 실행 계획 보기</summary>
-<div class="case-body">
-<h4>1. 마감 자료 정리 및 차이 분석</h4>
-<p>동일한 한 달, 동일 제품 기준의 가상 자료입니다. 순매출은 할인·반품 차감 후 금액이며, 원가는 제조·포장 원가를 포함한 매출원가로 가정합니다. 모든 마켓은 원화 환산을 완료했다고 가정합니다.</p>
-<div class="table-scroll" role="region" aria-label="마켓별 손익 비교표" tabindex="0">
-<table><caption>가상 마켓별 손익 · 단위: 백만원</caption><thead><tr><th scope="col">마켓</th><th scope="col">순매출</th><th scope="col">예산원가</th><th scope="col">실제원가</th><th scope="col">원가 차이</th><th scope="col">매출총이익률</th></tr></thead><tbody>
-<tr><th scope="row">한국</th><td>500</td><td>270</td><td>275</td><td>+5</td><td>45.0%</td></tr>
-<tr><th scope="row">일본</th><td>300</td><td>185</td><td>195</td><td>+10</td><td>35.0%</td></tr>
-<tr><th scope="row">동남아</th><td>200</td><td>145</td><td>150</td><td>+5</td><td>25.0%</td></tr>
-</tbody><tfoot><tr><th scope="row">전체</th><td>1,000</td><td>600</td><td>620</td><td>+20</td><td>38.0%</td></tr></tfoot></table></div>
-<p class="formula">매출총이익률 = (순매출 − 실제원가) ÷ 순매출 × 100<br>원가 차이 = 실제원가 − 예산원가. 전체 이익률은 마켓별 비율의 단순 평균이 아닌 합계 금액으로 계산합니다.</p>
-<p><strong>마감 체크 항목:</strong> 마켓·제품 코드와 대상 월 일치 여부, 중복·누락 자료, 원가 원장과 합계 대사, 예산 대비 차이의 사유를 확인하도록 설계합니다.</p>
-<h4>2. 개선 과제 선정</h4>
-<p>동남아의 이익률이 25.0%로 가장 낮습니다. 실제원가 150 중 포장 원가가 20이라고 추가로 가정하고, 포장 사양 표준화를 검토 과제로 선정합니다. 일본은 원가 초과가 가장 크므로 별도 원인 확인 대상으로 둡니다.</p>
-<ul><li>기준: 전체 순매출 1,000 − 실제원가 620 = 매출총이익 380.</li><li>개선 가정: 동남아 포장 원가 20 → 17, 전체 실제원가 620 → 617.</li><li>시나리오 결과: 매출총이익 383, 전체 이익률 38.3%로 <strong>0.3%p 개선</strong>.</li></ul>
-<p>절감액은 가정값이며 실현된 성과가 아닙니다. 일회성 전환비용, 품질·규제 요건, 환율 및 판매량 변화는 계산에서 제외했으므로 실행 전 추가 확인이 필요합니다.</p>
-<h4>3. 실행 계획 및 커뮤니케이션 설계</h4>
-<ol class="case-plan"><li><strong>1주차 · 자료 확인</strong><span>마켓 재무 담당자에게 원가 내역과 차이 사유를 요청하고, 누락·불일치 항목을 이슈 목록으로 정리합니다.</span></li><li><strong>2주차 · 대안 검토</strong><span>구매·제품·품질 담당자와 포장 사양, 견적, 전환비용 및 적용 가능 여부를 확인하도록 계획합니다.</span></li><li><strong>3주차 · 실행안 정리</strong><span>예상 절감액·담당 부서·일정·승인 필요 사항을 한 장의 실행안으로 정리하고, 마켓 공유용 영문 요약을 준비합니다.</span></li><li><strong>4주차 · 검증 기준 합의</strong><span>승인 후 적용할 시범 범위와 다음 마감의 확인 지표(포장 원가·매출총이익률·품질 이슈)를 정합니다.</span></li></ol>
-<p class="sample-note">위 일정과 부서 협의는 실행 계획 예시이며, 실제 협업 경험을 의미하지 않습니다.</p>
-</div></details>
+<p class="sample-note">개인 분석 프로젝트 · 2026.11<br>실제 기업 협업이나 개선 성과를 주장하지 않으며, 원가 정보가 없어 매출총이익률은 계산하지 않았습니다.</p>
 </article></section>
 <section aria-labelledby="education"><h2 id="education">학력<span class="section-en">Education</span></h2><div><article class="entry"><div class="row-head"><h3>한양대학교 · 서울</h3><span class="date">2018.02 — 2024.08</span></div><p>경제금융학부 졸업</p><p class="academic-detail"><strong class="gpa">학점 4.42/4.5</strong><span class="honor">Summa Cum Laude</span></p></article></div></section>
 <section aria-labelledby="experience"><h2 id="experience">경험 및 활동<span class="section-en">Experience</span></h2><div><article class="entry"><div class="row-head"><h3>학부연구생</h3><span class="date">2021.07 — 2021.08</span></div><p class="sub">한양대학교 경제금융학부</p><ul><li>경제학 및 금융학 논문 리딩그룹 참여</li></ul></article><article class="entry"><div class="row-head"><h3>영국 교환학생</h3><span class="date">2020.03 — 2020.08</span></div><p class="sub">Sheffield University</p><ul><li>국제무역·응용경제·수리경제 수강</li></ul></article></div></section>
