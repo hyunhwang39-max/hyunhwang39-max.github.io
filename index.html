@@ -32,6 +32,21 @@ tfoot{font-weight:600}
 @media(max-width:700px){.case-overview>div{grid-template-columns:1fr;gap:3px}}
 @media print{.project-case{break-inside:auto}.table-scroll{overflow:visible}table{font-size:9px}th,td{padding:6px 4px}}
 .project-visual{margin:24px 0;border:1px solid var(--line);background:#fcfbf8}.project-visual img{display:block;width:100%;height:auto}.project-visual figcaption{padding:14px 18px 0;font-size:12px;line-height:1.8;color:var(--muted);border-top:1px solid var(--line)}.project-visual figcaption strong{color:var(--text);font-weight:600}.visual-links{display:flex;flex-wrap:wrap;gap:10px 20px;padding:12px 18px 18px;font-size:11px}@media print{.visual-links{display:none}.project-visual{break-inside:avoid}}
+
+/* readability */
+body{font-size:15.5px;line-height:1.8}.intro{font-size:16px;line-height:1.85}
+h2{font-size:20px;letter-spacing:-.3px;line-height:1.4}
+h3{font-size:18px;line-height:1.5}.project-case h3{font-size:21px;line-height:1.45;letter-spacing:-.3px}
+.case-label{font-size:12.5px}.case-summary{font-size:15px;line-height:1.8}
+.case-overview dt{font-size:13.5px}.case-overview dd{font-size:15px}
+p{font-size:15px}.sub,.entry-note{font-size:13.5px}.date{font-size:13px}
+li{font-size:14.5px}.sample-note{font-size:12.5px}
+.project-visual figcaption{font-size:13.5px}.visual-links{font-size:13px}
+.compact-list dt{font-size:15px}.compact-list dd{font-size:14px}
+.language-item{font-size:14px}.language-item strong{font-size:26px}
+section{grid-template-columns:160px minmax(0,1fr)}
+@media(max-width:700px){body{font-size:15px}h1{font-size:34px}h2{font-size:22px}.project-case h3{font-size:20px}section{grid-template-columns:1fr;gap:16px}}
+@media print{body{font-size:11px}h2{font-size:14px}h3,.project-case h3{font-size:13px}p,li,.case-summary,.case-overview dd{font-size:11px}}
 </style></head><body><main class="resume">
 <header><div class="topline" aria-hidden="true"></div><span class="overline">RESUME & PORTFOLIO</span><h1>Hwang Hyun Kim</h1><p class="intro">Economics &amp; Finance graduate from Hanyang University (Summa Cum Laude) who learns the tools a problem needs and checks every number before drawing a conclusion. Below are data analysis projects built with SQL, Python and Tableau.</p></header>
 <section aria-labelledby="projects">
@@ -47,7 +62,7 @@ tfoot{font-weight:600}
 <div><dt>Judgment</dt><dd>When stores near competitors showed <em>higher</em> sales, I suspected a location effect and switched to a <strong>same-store, before-vs-after comparison</strong>.</dd></div>
 </dl>
 <figure class="project-visual">
-<a href="projects/rossmann-analysis.html" aria-label="Read the Rossmann sales analysis"><img src="assets/rossmann/competitor.png" width="725" height="588" alt="Sales change is about 0% before a competitor opens, then falls to about −10% and does not recover." loading="lazy" style="max-width:520px;margin:auto"></a>
+<a href="projects/rossmann-analysis.html" aria-label="Read the Rossmann sales analysis"><img src="assets/rossmann/competitor.png" width="725" height="588" alt="Sales change is about 0% before a competitor opens, then falls to about −10% and does not recover." loading="lazy" style="max-width:440px;margin:auto"></a>
 <figcaption>Sales before and after a competitor opening, built in Tableau. No trend before the opening, so the drop is attributed to the opening.</figcaption>
 <div class="visual-links"><a href="projects/rossmann-analysis.html"><strong>Read the full analysis →</strong></a><a href="https://public.tableau.com/views/RossmannSalesDashboard_17946255740990/1?:language=en-US&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">Tableau dashboard ↗</a><a href="assets/docs/rossmann-promotion-competitor-analysis.pdf">Report PDF ↓</a></div>
 </figure>
