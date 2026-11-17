@@ -60,6 +60,7 @@ section{grid-template-columns:160px minmax(0,1fr)}
 <p class="case-summary">Using about 1.0M daily sales records from 1,115 Rossmann drugstores in Germany, I measured how the same promotion performs at different times and how much sales fall when a competitor opens nearby.</p>
 <dl class="case-overview">
 <div><dt>Data</dt><dd>Kaggle Rossmann Store Sales · daily sales, Jan 2013 – Jul 2015</dd></div>
+<div><dt>Tools</dt><dd>Python (pandas, statsmodels), Tableau · Claude Code as a coding assistant; every result re-checked against the data</dd></div>
 <div><dt>Findings</dt><dd>Promotions work best <strong>when demand is weak</strong> (mid-month +38% vs. start/end of month +29%; off-peak months +43–44% vs. peak +29–31%). A competitor within 500m cuts sales by <strong>20%</strong>, with no recovery for over 12 months.</dd></div>
 <div><dt>Judgment</dt><dd>When stores near competitors showed <em>higher</em> sales, I suspected a location effect and switched to a <strong>same-store, before-vs-after comparison</strong>.</dd></div>
 </dl>
@@ -76,6 +77,7 @@ section{grid-template-columns:160px minmax(0,1fr)}
 <p class="case-summary">I checked and cleansed the product master and order data of a derma-cosmetics brand with SQL, then analyzed year-over-year growth by channel and gross margin by brand line and SKU.</p>
 <dl class="case-overview">
 <div><dt>Data</dt><dd>Self-generated synthetic data · 29 SKUs · 10 channels · 5 markets · 52,525 order lines (Jan 2025 – Oct 2026)</dd></div>
+<div><dt>Tools</dt><dd>SQL (SQLite), Python for synthetic data · Claude Code as a coding assistant; every result re-checked by re-running the queries</dd></div>
 <div><dt>Cleansing</dt><dd>11 rules found and fixed <strong>1,337 errors</strong>; re-running the same rules on the clean tables returned <strong>0 for all 11</strong>. Raw tables were kept unchanged.</dd></div>
 <div><dt>Analysis</dt><dd>Growth varied widely by channel (Qoo10 Japan +90.4%, duty-free −27.6%), and the Acne Clear line's gross margin was <strong>53.9%</strong>, below the company average of 67.0%.</dd></div>
 </dl>
