@@ -1,0 +1,37 @@
+issue_id,source_table,record_key,issue_type,detail,action_taken,owner_dept,status
+1,products_raw,HG-AC-003,중복 SKU,2건 등록: 아크네 스팟 패치 / 아크네 스팟패치 24매,최신 updated_at 행 유지,MD팀,확인요청
+2,products_raw,HG-BT-001,중복 SKU,2건 등록: 브라이트 톤 세럼 / 브라이트톤 세럼,최신 updated_at 행 유지,MD팀,확인요청
+3,products_raw,HG-CR-003,중복 SKU,2건 등록: 시카 리페어 크림 / 시카리페어 크림 50ml,최신 updated_at 행 유지,MD팀,확인요청
+4,products_raw,HG-SD-001,중복 SKU,2건 등록: 선디펜스 마일드 선크림 / 선디펜스 마일드 선크림(구),최신 updated_at 행 유지,MD팀,확인요청
+5,products_raw,HG-SD-005,원가 이상,정가 28000 / 원가 NULL,라인 평균 원가율로 임시 추정,원가팀,확인요청
+6,products_raw,HG-AC-005,원가 이상,정가 14000 / 원가 -5420,라인 평균 원가율로 임시 추정,원가팀,확인요청
+7,products_raw,HG-BT-004,원가 이상,정가 38000 / 원가 NULL,라인 평균 원가율로 임시 추정,원가팀,확인요청
+8,products_raw,HG-BC-006,원가 이상,정가 9000 / 원가 21900,라인 평균 원가율로 임시 추정,원가팀,확인요청
+9,products_raw,HG-AC-004,규제분류 누락,아크네 스팟 패치 소형,확인필요로 표기,RA팀,확인요청
+10,products_raw,HG-SD-004,규제분류 누락,선디펜스 톤업 선크림,확인필요로 표기,RA팀,확인요청
+11,products_raw,HG-BC-005,규제분류 누락,세라마이드 바디로션,확인필요로 표기,RA팀,확인요청
+12,products_raw,HG-AC-004,상태값 모순,단종일 2025-12-31 인데 status=Active,Discontinued로 변경,MD팀,확인요청
+13,products_raw,HG-CR-002,표기 비표준,category=[Serum] volume=[50ml],표준값으로 변환,MD팀,확인요청
+14,products_raw,HG-BC-003,표기 비표준,category=[ 크림] volume=[50ml],표준값으로 변환,MD팀,확인요청
+15,products_raw,HG-BT-003,표기 비표준,category=[토너] volume=[150mL],표준값으로 변환,MD팀,확인요청
+16,products_raw,HG-CR-003,표기 비표준,category=[Cream] volume=[50ml],표준값으로 변환,MD팀,확인요청
+17,products_raw,HG-AC-002,표기 비표준,category=[토너] volume=[200],표준값으로 변환,MD팀,확인요청
+18,products_raw,HG-CR-001,표기 비표준,category=[토너] volume=[200 mL],표준값으로 변환,MD팀,확인요청
+19,products_raw,HG-SD-001,표기 비표준,category=[Sunscreen] volume=[50ml],표준값으로 변환,MD팀,확인요청
+20,products_raw,HG-BC-001,표기 비표준,category=[toner] volume=[200ml],표준값으로 변환,MD팀,확인요청
+21,products_raw,HG-BT-001,표기 비표준,category=[세럼 ] volume=[30ml],표준값으로 변환,MD팀,확인요청
+22,products_raw,HG-BT-002,표기 비표준,category=[cream] volume=[50ml],표준값으로 변환,MD팀,확인요청
+23,products_raw,HG-BC-002,표기 비표준,category=[로션] volume=[200ML],표준값으로 변환,MD팀,확인요청
+24,sales_orders_raw,HG-CR-099,마스터 미등록 SKU,"14개 주문라인, 순매출 1356991",분석 제외,영업관리팀,확인요청
+25,sales_orders_raw,HG-SD-0O1,마스터 미등록 SKU,"10개 주문라인, 순매출 1177451",분석 제외,영업관리팀,확인요청
+26,sales_orders_raw,HG-XX-001,마스터 미등록 SKU,"13개 주문라인, 순매출 1142752",분석 제외,영업관리팀,확인요청
+27,sales_orders_raw,CH01,수량 0 이하,3개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+28,sales_orders_raw,CH02,수량 0 이하,1개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+29,sales_orders_raw,CH03,수량 0 이하,6개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+30,sales_orders_raw,CH04,수량 0 이하,5개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+31,sales_orders_raw,CH05,수량 0 이하,1개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+32,sales_orders_raw,CH06,수량 0 이하,1개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+33,sales_orders_raw,CH07,수량 0 이하,1개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+34,sales_orders_raw,CH08,수량 0 이하,1개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+35,sales_orders_raw,CH09,수량 0 이하,2개 주문라인,분석 제외 (반품 여부 확인 필요),영업관리팀,확인요청
+36,sales_orders_raw,ALL,주문 이중 적재,58개 행 중복,중복 제거,IT/ERP팀,확인요청

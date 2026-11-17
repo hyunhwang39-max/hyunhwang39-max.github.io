@@ -37,21 +37,36 @@ tfoot{font-weight:600}
 <section aria-labelledby="projects">
 <h2 id="projects">개인 프로젝트<span class="section-en">Projects</span></h2>
 <article class="entry project-case">
-<div class="case-label">01 · 실제 공개 데이터 분석 · Python / pandas / Matplotlib</div>
-<h3>큰 취소 한 건이 국가의 평가를 바꾼다면</h3>
-<p class="case-summary">영국 온라인 소매업체의 실제 거래 기록을 정리하고, 국가별 취소 금액을 비교해 먼저 확인할 거래와 실행 과제를 찾았습니다.</p>
+<div class="case-label">01 · 공개 데이터 분석 · Python / Tableau</div>
+<h3>행사는 언제 해야 하고, 경쟁점은 얼마나 영향을 줄까</h3>
+<p class="case-summary">독일 드러그스토어 Rossmann 1,115개 매장의 일별 매출 약 100만 건으로, 같은 행사의 시기별 효과와 경쟁 매장 개점의 영향을 분석했습니다.</p>
 <dl class="case-overview">
-<div><dt>데이터</dt><dd>UCI Online Retail II · 원본 약 107만 행<br>2009.12–2011.11의 완전한 24개월을 분석했습니다.</dd></div>
-<div><dt>핵심 발견</dt><dd>프랑스의 상품 취소 금액 중 <strong>67.8%가 한 건의 전표</strong>에 집중돼 있었습니다. 해당 전표에는 45개 상품이 함께 기록돼 있었습니다.</dd></div>
-<div><dt>결론</dt><dd>국가 전체나 상품 품질을 문제로 단정하기보다, <strong>대규모 주문의 취소 사유와 정산 내역을 먼저 확인</strong>하도록 조사 우선순위를 제안했습니다.</dd></div>
+<div><dt>데이터</dt><dd>Kaggle Rossmann Store Sales · 2013.01–2015.07 일별 매출 약 100만 건</dd></div>
+<div><dt>핵심 발견</dt><dd>행사 효과는 <strong>수요가 약할 때 더 컸습니다</strong>(월중 +38% vs 월초·월말 +29%, 비수기 +43~44% vs 성수기 +29~31%). 500m 이내 경쟁점이 생기면 매출이 <strong>−20%</strong> 줄고 1년 넘게 회복되지 않았습니다.</dd></div>
+<div><dt>판단</dt><dd>경쟁점이 가까운 매장의 매출이 오히려 높게 나오자, 도심 입지 효과를 의심하고 <strong>같은 매장의 개점 전후 비교</strong>로 방법을 바꿨습니다.</dd></div>
 </dl>
 <figure class="project-visual">
-<a href="projects/retail-analysis.html" aria-label="실제 거래 데이터 분석 프로젝트 자세히 읽기">
-<img src="assets/retail/france.svg" width="1100" height="440" alt="프랑스 상품 취소 금액 17,514.39파운드 중 하나의 전표가 11,880.84파운드로 67.8%를 차지합니다." loading="lazy"></a>
-<figcaption>Python으로 만든 실제 데이터 시각화입니다. 취소 기록만으로 반품 사유나 실제 손실을 알 수는 없어, 확인 가능한 결과와 추가 조사 과제를 구분했습니다.</figcaption>
-<div class="visual-links"><a href="projects/retail-analysis.html"><strong>데이터부터 분석 과정·결론까지 자세히 읽기 →</strong></a></div>
+<a href="projects/rossmann-analysis.html" aria-label="Rossmann 매출 분석 프로젝트 자세히 보기"><img src="assets/rossmann/competitor.png" width="725" height="588" alt="경쟁점 개점 전 0% 안팎이던 매출 변화가 개점 직후 약 −10%로 떨어진 뒤 회복하지 않습니다." loading="lazy" style="max-width:520px;margin:auto"></a>
+<figcaption>Tableau로 만든 경쟁점 개점 전후 매출 변화입니다. 개점 전에는 추세가 없어, 하락을 개점의 영향으로 해석했습니다.</figcaption>
+<div class="visual-links"><a href="projects/rossmann-analysis.html"><strong>분석 과정과 근거 자세히 보기 →</strong></a><a href="assets/docs/rossmann-promotion-competitor-analysis.pdf">보고서 PDF ↓</a></div>
 </figure>
-<p class="sample-note">개인 분석 프로젝트 · 2026.11<br>실제 기업 협업이나 개선 성과를 주장하지 않으며, 원가 정보가 없어 매출총이익률은 계산하지 않았습니다.</p>
+<p class="sample-note">개인 분석 프로젝트 · 2026 · 할인율·행사 비용 데이터가 없어 효과는 이익이 아닌 매출 기준입니다.</p>
+</article>
+<article class="entry project-case">
+<div class="case-label">02 · 데이터 정제 · SQL (SQLite)</div>
+<h3>오류 1,337건을 0건으로, 그다음에 분석</h3>
+<p class="case-summary">더마 코스메틱 브랜드의 제품 마스터와 주문 데이터를 SQL로 점검·정제하고, 정제된 데이터로 채널별 성장률과 라인·SKU별 매출총이익률을 분석했습니다.</p>
+<dl class="case-overview">
+<div><dt>데이터</dt><dd>직접 생성한 가상 데이터 · 제품 29개 SKU · 10개 채널 · 5개 국가 · 주문 52,525건 (2025.01–2026.10)</dd></div>
+<div><dt>정제</dt><dd>11개 점검 규칙으로 <strong>오류 1,337건</strong>을 찾아 정제했고, 같은 규칙을 다시 돌려 <strong>11개 모두 0건</strong>임을 확인했습니다. 원본 테이블은 그대로 두었습니다.</dd></div>
+<div><dt>분석</dt><dd>Qoo10 Japan +90.4%, 면세점 −27.6%로 채널별 성장 편차가 컸고, Acne Clear 라인의 매출총이익률이 <strong>53.9%</strong>로 전사 평균(67.0%)보다 낮았습니다.</dd></div>
+</dl>
+<figure class="project-visual">
+<a href="projects/derma-data-cleansing.html" aria-label="데이터 정제 프로젝트 자세히 보기"><img src="assets/derma/sql-before-after.png" alt="11개 정제 규칙별 정제 전후 오류 건수를 비교하는 SQL 쿼리와 결과 표" loading="lazy"></a>
+<figcaption>정제 규칙마다 같은 조건을 원본과 정제 테이블에 적용해 건수를 나란히 비교한 SQL 쿼리입니다.</figcaption>
+<div class="visual-links"><a href="projects/derma-data-cleansing.html"><strong>SQL 쿼리와 분석 결과 자세히 보기 →</strong></a><a href="assets/docs/derma-data-cleansing-sales-analysis.pdf">보고서 PDF ↓</a><a href="assets/docs/data_issue_log.csv">이슈 로그 CSV ↓</a></div>
+</figure>
+<p class="sample-note">개인 분석 프로젝트 · 2026 · 가상 데이터로, 수치보다 정제·검증·집계 과정을 보여주는 것이 목적입니다.</p>
 </article></section>
 <section aria-labelledby="education"><h2 id="education">학력<span class="section-en">Education</span></h2><div><article class="entry"><div class="row-head"><h3>한양대학교 · 서울</h3><span class="date">2018.02 — 2024.08</span></div><p>경제금융학부 졸업</p><p class="academic-detail"><strong class="gpa">학점 4.42/4.5</strong><span class="honor">Summa Cum Laude</span></p></article></div></section>
 <section aria-labelledby="experience"><h2 id="experience">경험 및 활동<span class="section-en">Experience</span></h2><div><article class="entry"><div class="row-head"><h3>학부연구생</h3><span class="date">2021.07 — 2021.08</span></div><p class="sub">한양대학교 경제금융학부</p><ul><li>경제학 및 금융학 논문 리딩그룹 참여</li></ul></article><article class="entry"><div class="row-head"><h3>영국 교환학생</h3><span class="date">2020.03 — 2020.08</span></div><p class="sub">Sheffield University</p><ul><li>국제무역·응용경제·수리경제 수강</li></ul></article></div></section>
